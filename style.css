@@ -1,0 +1,37 @@
+.ui-slider .ui-slider-handle{
+    border-radius: 50%;
+    background-color: #f16d7f;
+    width: 14px;
+    height: 14px;
+    outline: none;
+}
+
+.ui-slider-horizontal{
+    background-color: #f0f0f0;
+    width: 262px;
+    height: 6px;
+}
+.ui-slider .ui-slider-range{
+    background-color: #f16d7f;
+    z-index: 2;
+}
+.data-price{
+    display: flex;
+    justify-content: space-between;
+    width: 262px;
+    font-family: OpenSans;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+.selector-one {
+    width: 264px;
+    height: 100%;
+}
+.selector-one h3 {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

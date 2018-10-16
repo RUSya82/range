@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Slider - Range slider</title>
+<link rel="stylesheet" href="jquery-ui/themes/base/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $('#min-price').text("$" + $( "#slider-range" ).slider( "values", 0 ));
+                $('#max-price').text("$" + $( "#slider-range" ).slider( "values", 1 ));
+            }
+        });
+        $('#min-price').text("$" + $( "#slider-range" ).slider( "values", 0 ));
+        $('#max-price').text("$" + $( "#slider-range" ).slider( "values", 1 ));
+    } );
+</script>
+</head>
+<body>
+
+
+<div class="selector-one">
+    <h3>Price</h3>
+
+    <div id="slider-range"></div>
+    <div class="data-price">
+        <span id="min-price">0</span>
+        <span id="max-price">0</span>
+    </div>
+
+</div>
+    </body>
+    </html>
